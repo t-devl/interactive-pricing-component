@@ -25,3 +25,15 @@ body,
 button {
   font-family: "Manrope", sans-serif;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--veryPaleBlue);
+  background-image: url("./images/bg-pattern.svg");
+  background-repeat: no-repeat;
+}
