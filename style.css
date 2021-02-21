@@ -196,3 +196,32 @@ button {
   box-shadow: 0 10px 20px 5px hsl(174, 77%, 80%);
   cursor: pointer;
 }
+
+.footer {
+  padding: 2rem 1.5rem;
+  border-top: 1px solid var(--lighterGreyishBlue);
+}
+
+.features {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+.feature {
+  margin-bottom: 0.5rem;
+}
+
+.feature::before {
+  content: url("images/icon-check.svg");
+  margin-right: 1rem;
+}
+
+.start-btn {
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 30px;
+  color: var(--paleBlue);
+  background-color: var(--darkDesaturatedBlue);
+  font-size: 0.9rem;
+}
