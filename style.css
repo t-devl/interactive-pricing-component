@@ -58,6 +58,10 @@ button {
   text-align: center;
 }
 
+.main {
+  padding: 2rem 1.5rem;
+}
+
 .pageviews {
   font-weight: bold;
   letter-spacing: 2px;
