@@ -59,8 +59,11 @@ button {
 }
 
 .pricing-component {
+  margin-bottom: 4.5rem;
+  border-radius: 10px;
   background-color: var(--white);
   color: var(--greyishBlue);
+  box-shadow: 0 20px 25px hsl(214, 23%, 94%);
   text-align: center;
 }
 
