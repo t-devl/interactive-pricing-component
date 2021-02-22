@@ -111,6 +111,11 @@ button {
   margin-left: 1rem;
   border-radius: 15px;
   background-color: var(--lightGreyishBlue);
+  transition: background-color 0.25s ease-out;
+}
+
+.billing-toggle--active {
+  background-color: var(--strongCyan);
 }
 
 .billing-toggle::after {
@@ -122,6 +127,11 @@ button {
   height: 17px;
   border-radius: 50%;
   background-color: white;
+  transition: all 0.25s ease-out;
+}
+
+.billing-toggle--active::after {
+  transform: translateX(25px);
 }
 
 .yearly-billing {
