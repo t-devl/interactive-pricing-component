@@ -50,8 +50,12 @@ button {
 }
 
 .description {
+  width: 210px;
+  margin: 0 auto;
   color: var(--greyishBlue);
   font-size: 1rem;
+  font-size: 0.94rem;
+  line-height: 1.8;
 }
 
 .pricing-component {
