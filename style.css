@@ -151,6 +151,10 @@ button {
   font-weight: bold;
 }
 
+.discount::before {
+  content: "-";
+}
+
 .discount-text {
   display: none;
 }
@@ -255,4 +259,71 @@ button {
   color: var(--paleBlue);
   background-color: var(--darkDesaturatedBlue);
   font-size: 0.8rem;
+}
+
+@media (min-width: 650px) {
+  .pricing-component {
+    width: 550px;
+    text-align: left;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "pageviews price"
+      "slider slider"
+      "billing billing";
+    padding: 2rem 3rem;
+  }
+
+  .pageviews {
+    grid-area: pageviews;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .pageviews-figure {
+    margin-right: 0.4rem;
+  }
+
+  .price {
+    grid-area: price;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .slider-container {
+    grid-area: slider;
+  }
+
+  .billing {
+    grid-area: billing;
+    justify-content: center;
+    transform: translateX(2.25rem);
+  }
+
+  .discount::before {
+    content: "";
+  }
+
+  .discount-text {
+    display: inline;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+  }
+
+  .features {
+    margin: 0;
+  }
+
+  .feature:last-of-type {
+    margin-bottom: 0;
+  }
 }
