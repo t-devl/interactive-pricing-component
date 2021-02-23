@@ -115,6 +115,7 @@ button {
   border-radius: 15px;
   background-color: var(--lightGreyishBlue);
   transition: background-color 0.25s ease-out;
+  cursor: pointer;
 }
 
 .billing-toggle--active {
@@ -212,6 +213,15 @@ button {
   cursor: pointer;
 }
 
+.slider::-webkit-slider-thumb:hover {
+  background-color: hsl(174, 80%, 57%);
+}
+
+.slider::-webkit-slider-thumb:active {
+  background-color: hsl(174, 90%, 37%);
+  cursor: grabbing;
+}
+
 .slider::-moz-range-thumb {
   width: 40px;
   height: 40px;
@@ -222,6 +232,15 @@ button {
   cursor: pointer;
 }
 
+.slider::-moz-range-thumb:hover {
+  background-color: hsl(174, 80%, 57%);
+}
+
+.slider::-moz-range-thumb:active {
+  background-color: hsl(174, 90%, 37%);
+  cursor: grabbing;
+}
+
 .slider::-ms-thumb {
   width: 40px;
   height: 40px;
@@ -230,6 +249,15 @@ button {
   background-color: hsl(174, 86%, 45%);
   box-shadow: 0 10px 20px 5px hsl(174, 77%, 80%);
   cursor: pointer;
+}
+
+.slider::-ms-thumb:hover {
+  background-color: hsl(174, 80%, 57%);
+}
+
+.slider::-ms-thumb:active {
+  background-color: hsl(174, 90%, 37%);
+  cursor: grabbing;
 }
 
 .footer {
@@ -259,9 +287,16 @@ button {
   color: var(--paleBlue);
   background-color: var(--darkDesaturatedBlue);
   font-size: 0.8rem;
+  cursor: pointer;
 }
 
 @media (min-width: 650px) {
+  .container {
+    justify-content: flex-start;
+    height: 100vh;
+    background-size: 100% auto;
+  }
+
   .intro {
     padding: 3rem 1.5rem;
     margin: 3rem 0 2rem;
