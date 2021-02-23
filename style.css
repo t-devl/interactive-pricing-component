@@ -262,6 +262,19 @@ button {
 }
 
 @media (min-width: 650px) {
+  .intro {
+    padding: 3rem 1.5rem;
+    margin: 3rem 0 2rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    width: auto;
+  }
+
   .pricing-component {
     width: 550px;
     text-align: left;
