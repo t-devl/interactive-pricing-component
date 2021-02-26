@@ -1,8 +1,8 @@
 const slider = document.querySelector(".slider");
 const pageviewsFigure = document.querySelector(".pageviews-figure");
 const priceFigure = document.querySelector(".price-figure");
-const pageviewsOptions = ["10k", "50k", "100k", "250k", "500k", "1M"];
-const priceOptions = ["$4.00", "$8.00", "$16.00", "$24.00", "$32.00"];
+const pageviewsOptions = ["10k", "50k", "100k", "500k", "1M"];
+const priceOptions = ["$8.00", "$12.00", "$16.00", "$24.00", "$36.00"];
 const billingToggle = document.querySelector(".billing-toggle");
 
 updatePageviews();
