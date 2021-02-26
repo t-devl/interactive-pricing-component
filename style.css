@@ -293,7 +293,7 @@ button {
 @media (min-width: 650px) {
   .container {
     justify-content: flex-start;
-    height: 100vh;
+    min-height: 100vh;
     background-size: 100% auto;
   }
 
