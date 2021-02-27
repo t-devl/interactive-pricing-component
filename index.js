@@ -9,15 +9,23 @@ updatePageviews();
 updatePrice();
 
 slider.addEventListener("input", function () {
-  slider.style.background = `linear-gradient(to right, var(--softCyan) ${
-    ((slider.value - slider.min) * 100) / (slider.max - slider.min)
-  }%, var(--lighterGreyishBlue) ${
-    ((slider.value - slider.min) * 100) / (slider.max - slider.min)
-  }%)`;
+  slider.style.background =
+    "linear-gradient(to right, var(--softCyan) " +
+    ((slider.value - slider.min) * 100) / (slider.max - slider.min) +
+    "%, var(--lighterGreyishBlue) " +
+    ((slider.value - slider.min) * 100) / (slider.max - slider.min) +
+    "%)";
 
   updatePageviews();
   updatePrice();
 });
+
+if (window.document.documentMode) {
+  slider.addEventListener("change", function () {
+    updatePageviews();
+    updatePrice();
+  });
+}
 
 function updatePageviews() {
   pageviewsFigure.innerHTML = pageviewsOptions[slider.value - 1];

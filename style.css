@@ -32,6 +32,7 @@ button {
   justify-content: center;
   align-items: center;
   width: 100%;
+  background-color: hsl(230, 100%, 99%);
   background-color: var(--veryPaleBlue);
   background-image: url("./images/bg-pattern.svg");
   background-repeat: no-repeat;
@@ -48,6 +49,7 @@ button {
 
 .title {
   margin-bottom: 0.5rem;
+  color: hsl(227, 35%, 25%);
   color: var(--darkDesaturatedBlue);
   font-size: 1.4rem;
 }
@@ -55,6 +57,7 @@ button {
 .description {
   width: 210px;
   margin: 0 auto;
+  color: hsl(225, 20%, 60%);
   color: var(--greyishBlue);
   font-size: 1rem;
   font-size: 0.94rem;
@@ -64,7 +67,9 @@ button {
 .pricing-component {
   margin-bottom: 4.5rem;
   border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
   background-color: var(--white);
+  color: hsl(225, 20%, 60%);
   color: var(--greyishBlue);
   box-shadow: 0 20px 25px hsl(214, 23%, 94%);
   text-align: center;
@@ -89,6 +94,7 @@ button {
 
 .price-figure {
   margin-right: 0.5rem;
+  color: hsl(227, 35%, 25%);
   color: var(--darkDesaturatedBlue);
   font-size: 2.2rem;
   font-weight: bold;
@@ -113,12 +119,14 @@ button {
   height: 25px;
   margin-left: 1rem;
   border-radius: 15px;
+  background-color: hsl(223, 50%, 87%);
   background-color: var(--lightGreyishBlue);
   transition: background-color 0.25s ease-out;
   cursor: pointer;
 }
 
 .billing-toggle--active {
+  background-color: hsl(174, 86%, 45%);
   background-color: var(--strongCyan);
 }
 
@@ -146,7 +154,9 @@ button {
   padding: 0.25rem 0.5rem;
   margin-left: 0.25rem;
   border-radius: 15px;
+  color: hsl(15, 100%, 70%);
   color: var(--lightRed);
+  background: hsl(14, 92%, 95%);
   background-color: var(--lightGreyishRed);
   font-size: 0.7rem;
   font-weight: bold;
@@ -262,6 +272,7 @@ button {
 
 .footer {
   padding: 2rem 1.5rem;
+  border-top: 1px solid hsl(224, 65%, 95%);
   border-top: 1px solid var(--lighterGreyishBlue);
 }
 
@@ -284,7 +295,9 @@ button {
   padding: 1rem 4rem;
   border: none;
   border-radius: 30px;
+  color: hsl(226, 100%, 87%);
   color: var(--paleBlue);
+  background-color: hsl(227, 35%, 25%);
   background-color: var(--darkDesaturatedBlue);
   font-size: 0.8rem;
   cursor: pointer;
